@@ -39,8 +39,8 @@ roles:
   reference: Linear CIE-XYZ E
 
   # Internal scene linear space
-  scene_linear: Linear Rec.709
-  rendering: Linear Rec.709
+  scene_linear: Linear ACEScg
+  rendering: Linear ACEScg
 
   # Default color space for byte image
   default_byte: sRGB
@@ -49,10 +49,10 @@ roles:
   default_float: Linear Rec.709
 
   # Default color space sequencer is working in
-  default_sequencer: sRGB
+  default_sequencer: Linear ACEScg
 
   # Distribution of colors in color picker
-  color_picking: sRGB
+  color_picking: Linear ACEScg
 
   # Non-color data
   data: Non-Color
