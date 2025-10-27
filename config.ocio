@@ -359,7 +359,7 @@ colorspaces:
     from_scene_reference: !<GroupTransform>
       children:
         - !<ColorSpaceTransform> {src: Linear CIE-XYZ I-E, dst: Linear CIE-XYZ DCI}     
-        - !<MatrixTransform> {matrix: [2.7253940305, -1.0180030062, -0.4401631952, 0.0000000000, -0.7951680258, 1.6897320548, 0.0226471906, 0.0000000000, 0.0412418914, -0.0876390192, 1.1009293786, 0.0000000000, 0.0000000000, 0.0000000000, 0.0000000000, 1.0000000000]}
+        - !<MatrixTransform> {matrix: [2.7253940, -1.0180030, -0.4401632, 0, -0.7951680, 1.6897321, 0.0226472, 0, 0.0412419, -0.0876390, 1.1009294, 0, 0, 0, 0, 1]}
 
   - !<ColorSpace> #Linear BT.709 I-E
     name: Linear BT.709 I-E
@@ -386,7 +386,7 @@ colorspaces:
     from_scene_reference: !<GroupTransform>
       children:
         - !<ColorSpaceTransform> {src: Linear CIE-XYZ E, dst: Linear CIE-XYZ D65}
-        - !<MatrixTransform> {matrix: [ 3.2404373564920070, -1.5371305409000549, -0.4985288240756933, 0, -0.9692674982687597, 1.8760136862977035, 0.0415560804587997, 0, 0.0556434463874256, -0.2040259700872272, 1.0572254813610864, 0, 0, 0, 0, 1]}
+        - !<MatrixTransform> {matrix: [3.2409699, -1.5373832, -0.4986108, 0, -0.9692436, 1.8759675, 0.0415551, 0, 0.0556301, -0.2039770, 1.0569715, 0, 0, 0, 0, 1]}
 
   - !<ColorSpace> #Linear Adobe RGB (1998)
     name: Linear Adobe RGB (1998)
@@ -402,7 +402,7 @@ colorspaces:
     from_scene_reference: !<GroupTransform>
       name: Linear DCDM XYZ to Linear Adobe RGB (1998)
       children:
-        - !<MatrixTransform> {matrix: [2.0415900000, -0.5650100000, -0.3447300000, 0.0000000000, -0.9692400000, 1.8759700000, 0.0415600000, 0.0000000000, 0.0134400000, -0.1183600000, 1.0151700000, 0.0000000000, 0.0000000000, 0.0000000000, 0.0000000000, 1.0000000000]}
+        - !<MatrixTransform> {matrix: [2.0415900, -0.5650100, -0.3447300, 0, -0.9692400, 1.8759700, 0.0415600, 0, 0.0134400, -0.1183600, 1.0151700, 0, 0, 0, 0, 1]}
 
   - !<ColorSpace> #Linear ProPhoto RGB
     name: Linear ProPhoto RGB
@@ -418,7 +418,7 @@ colorspaces:
     from_scene_reference: !<GroupTransform>
       name: Linear DCDM XYZ to Linear ProPhoto RGB
       children:
-        - !<MatrixTransform> {matrix: [1.3460000000, -0.2556000000, -0.0511000000, 0.0000000000, -0.5446000000, 1.5082000000, 0.0205000000, 0.0000000000, 0.0000000000, 0.0000000000, 1.2123000000, 0.0000000000, 0.0000000000, 0.0000000000, 0.0000000000, 1.0000000000]}
+        - !<MatrixTransform> {matrix: [1.3460, -0.2556, -0.0511, 0, -0.5446, 1.5082, 0.0205, 0, 0, 0, 1.2123, 0, 0, 0, 0, 1]}
 
   - !<ColorSpace> #Linear DCI-P3 I-E
     name: Linear DCI-P3 I-E
@@ -445,7 +445,7 @@ colorspaces:
     from_scene_reference: !<GroupTransform>
       children:
         - !<ColorSpaceTransform> {src: Linear CIE-XYZ E, dst: Linear CIE-XYZ D65}
-        - !<MatrixTransform> {matrix: [2.4935091239346101, -0.9313881794047790, -0.4027127567416516, 0, -0.8294732139295544, 1.7626305796003032, 0.0236242371055886, 0, 0.0358512644339181, -0.0761839369220759, 0.9570295866943110, 0, 0, 0, 0, 1]}
+        - !<MatrixTransform> {matrix: [2.4934969, -0.9313836, -0.4027108, 0, -0.8294890, 1.7626641, 0.0236247, 0, 0.0358458, -0.0761724, 0.9568845, 0, 0, 0, 0, 1]}
 
   - !<ColorSpace> #Linear BT.2020 I-E
     name: Linear BT.2020 I-E
@@ -471,7 +471,7 @@ colorspaces:
     from_scene_reference: !<GroupTransform>
       children:
         - !<ColorSpaceTransform> {src: Linear CIE-XYZ E, dst: Linear CIE-XYZ D65}
-        - !<MatrixTransform> {matrix: [ 1.7166634277958805, -0.3556733197301399, -0.2533680878902478, 0, -0.6666738361988869, 1.6164557398246981, 0.0157682970961337, 0, 0.0176424817849772, -0.0427769763827532, 0.9422432810184308, 0, 0, 0, 0, 1]}
+        - !<MatrixTransform> {matrix: [1.7166512, -0.3556708, -0.2533663, 0, -0.6666844, 1.6164812, 0.0157685, 0, 0.0176399, -0.0427706, 0.9421031, 0, 0, 0, 0, 1]}
 
   - !<ColorSpace> #Linear ACES - AP0
     name: Linear ACES - AP0
@@ -513,7 +513,7 @@ colorspaces:
     from_scene_reference: !<GroupTransform>
       children:
         - !<ColorSpaceTransform> {src: Linear CIE-XYZ I-E, dst: Linear CIE-XYZ I-D65}
-        - !<MatrixTransform> {matrix: [ 0.7053968501, 0.1640413283, 0.08101774865, 0, 0.2801307241, 0.8202066415, -0.1003373656, 0, -0.1037815116, -0.07290725703, 1.265746519, 0, 0, 0, 0, 1], direction: inverse}
+        - !<MatrixTransform> {matrix: [1.5250528, -0.3159135, -0.1226583, 0, -0.5091526, 1.3333274, 0.1382844, 0, 0.0957153, 0.0508974, 0.7879558, 0, 0, 0, 0, 1]}
 
   - !<ColorSpace> #Linear FilmLight E-Gamut 2
     name: Linear FilmLight E-Gamut 2
@@ -527,7 +527,7 @@ colorspaces:
     from_scene_reference: !<GroupTransform>
       children:
         - !<ColorSpaceTransform> {src: Linear CIE-XYZ I-E, dst: Linear CIE-XYZ I-D65}
-        - !<MatrixTransform> {matrix: [1.4277603269, -0.2370341389, -0.110178391, 0.0000000000, -0.4611742260, 1.2944288463, 0.1321301759, 0.0000000000, 0.1054775803, 0.0641141921, 0.7672997244, 0.0000000000, 0.0000000000, 0.0000000000, 0.0000000000, 1.0000000000]}
+        - !<MatrixTransform> {matrix: [1.4277603, -0.2370341, -0.1101784, 0.0000000, -0.4611742, 1.2944288, 0.1321302, 0.0000000, 0.1054776, 0.0641142, 0.7672997, 0, 0, 0, 0, 1]}
 
   - !<ColorSpace> #Linear DaVinci WideGamut
     name: Linear DaVinci WideGamut
@@ -541,7 +541,7 @@ colorspaces:
     from_scene_reference: !<GroupTransform>
       children:
         - !<ColorSpaceTransform> {src: Linear CIE-XYZ I-E, dst: Linear CIE-XYZ I-D65}
-        - !<MatrixTransform> {matrix: [1.5166720420, -0.2814780479, -0.1469636332, 0.0000000000, -0.4649171012, 1.2514237757, 0.1748846089, 0.0000000000, 0.0648490471, 0.1091393437, 0.7614146215, 0.0000000000, 0.0000000000, 0.0000000000, 0.0000000000, 1.0000000000]}
+        - !<MatrixTransform> {matrix: [1.5166720, -0.2814780, -0.1469636, 0, -0.4649171, 1.2514238, 0.1748846, 0, 0.0648490, 0.1091393, 0.7614146, 0, 0, 0, 0, 1]}
 
 
 #Camera Linear Stuff    
@@ -557,7 +557,7 @@ colorspaces:
     from_scene_reference: !<GroupTransform>
       children:
         - !<ColorSpaceTransform> {src: Linear CIE-XYZ I-E, dst: Linear CIE-XYZ I-D65}
-        - !<MatrixTransform> {matrix: [1.7890660000, -0.4825340000, -0.2000760000, 0.0000000000, -0.6398490000, 1.3964000000, 0.1944320000, 0.0000000000, -0.0415320000, 0.0823350000, 0.8788680000, 0.0000000000, 0.0000000000, 0.0000000000, 0.0000000000, 1.0000000000]}
+        - !<MatrixTransform> {matrix: [1.789066, -0.482534, -0.200076, 0, -0.639849, 1.396400, 0.194432, 0, -0.041532, 0.082335, 0.878868, 0, 0, 0, 0, 1]}
         
   - !<ColorSpace> #Linear ARRI Wide Gamut 4
     name: Linear ARRI Wide Gamut 4
@@ -571,7 +571,7 @@ colorspaces:
     from_scene_reference: !<GroupTransform>
       children:
         - !<ColorSpaceTransform> {src: Linear CIE-XYZ I-E, dst: Linear CIE-XYZ I-D65}
-        - !<MatrixTransform> {matrix: [1.5092154723, -0.2505973453, -0.1688114753, 0.0000000000, -0.4915454517, 1.3612455460, 0.0972829420, 0.0000000000, 0.0000000000, 0.0000000000, 0.9182249511, 0.0000000000, 0.0000000000, 0.0000000000, 0.0000000000, 1.0000000000]}
+        - !<MatrixTransform> {matrix: [1.5092155, -0.2505973, -0.1688115, 0, -0.4915455, 1.3612455, 0.0972829, 0, 0, 0, 0.9182250, 0, 0, 0, 0, 1]}
 
   - !<ColorSpace> #Linear BMD WideGamut Gen5
     name: Linear BMD WideGamut Gen5
@@ -585,7 +585,7 @@ colorspaces:
     from_scene_reference: !<GroupTransform>
       children:
         - !<ColorSpaceTransform> {src: Linear CIE-XYZ I-E, dst: Linear CIE-XYZ I-D65}
-        - !<MatrixTransform> {matrix: [1.8663823404, -0.5183973429, -0.2346098094, 0.0000000000, -0.6003424925, 1.3781489625, 0.1767318303, 0.0000000000, 0.0024519937, 0.0863996742, 0.8369427073, 0.0000000000, 0.0000000000, 0.0000000000, 0.0000000000, 1.0000000000]}
+        - !<MatrixTransform> {matrix: [1.8663823, -0.5183973, -0.2346098, 0, -0.6003425, 1.3781490, 0.1767318, 0, 0.0024520, 0.0863997, 0.8369427, 0, 0, 0, 0, 1]}
 
   - !<ColorSpace> #Linear CinemaGamut D55
     name: Linear CinemaGamut D55
@@ -599,7 +599,7 @@ colorspaces:
     from_scene_reference: !<GroupTransform>
       children:
         - !<ColorSpaceTransform> {src: Linear CIE-XYZ I-E, dst: Linear CIE-XYZ I-D65}
-        - !<MatrixTransform> {matrix: [1.4898182749, -0.2608959022, -0.1424265218, 0.0000000000, -0.4581665745, 1.2616277831, 0.1596236316, 0.0000000000, -0.0703496677, 0.2215576672, 0.7761816036, 0.0000000000, 0.0000000000, 0.0000000000, 0.0000000000, 1.0000000000]}
+        - !<MatrixTransform> {matrix: [1.4898183, -0.2608959, -0.1424265, 0, -0.4581666, 1.2616278, 0.1596236, 0, -0.0703497, 0.2215577, 0.7761816, 0, 0, 0, 0, 1]}
 
   - !<ColorSpace> #Linear V-Gamut
     name: Linear V-Gamut
@@ -613,7 +613,7 @@ colorspaces:
     from_scene_reference: !<GroupTransform>
       children:
         - !<ColorSpaceTransform> {src: Linear CIE-XYZ I-E, dst: Linear CIE-XYZ I-D65}
-        - !<MatrixTransform> {matrix: [1.5890120000, -0.3132040000, -0.1809650000, 0.0000000000, -0.5340530000, 1.3960110000, 0.1024580000, 0.0000000000, 0.0111790000, 0.0031940000, 0.9055350000, 0.0000000000, 0.0000000000, 0.0000000000, 0.0000000000, 1.0000000000]}
+        - !<MatrixTransform> {matrix: [1.5890120, -0.3132040, -0.1809650, 0, -0.5340530, 1.3960110, 0.1024580, 0, 0.0111790, 0.0031940, 0.9055350, 0, 0, 0, 0, 1]}
 
   - !<ColorSpace> #Linear REDWideGamutRGB
     name: Linear REDWideGamutRGB
@@ -627,7 +627,7 @@ colorspaces:
     from_scene_reference: !<GroupTransform>
       children:
         - !<ColorSpaceTransform> {src: Linear CIE-XYZ I-E, dst: Linear CIE-XYZ I-D65}
-        - !<MatrixTransform> {matrix: [1.4128066123, -0.1775223662, -0.1517703764, 0.0000000000, -0.4862031858, 1.2906962108, 0.1574002837, 0.0000000000, -0.0371387758, 0.2863757596, 0.6876796053, 0.0000000000, 0.0000000000, 0.0000000000, 0.0000000000, 1.0000000000]}
+        - !<MatrixTransform> {matrix: [1.4128066, -0.1775224, -0.1517704, 0, -0.4862032, 1.2906962, 0.1574003, 0, -0.0371388, 0.2863758, 0.6876796, 0, 0, 0, 0, 1]}
 
   - !<ColorSpace> #Linear S-Gamut
     name: Linear S-Gamut
@@ -641,7 +641,7 @@ colorspaces:
     from_scene_reference: !<GroupTransform>
       children:
         - !<ColorSpaceTransform> {src: Linear CIE-XYZ I-E, dst: Linear CIE-XYZ I-D65}
-        - !<MatrixTransform> {matrix: [1.5073998991, -0.2458221374, -0.1716116808, 0.0000000000, -0.5181517271, 1.3553912409, 0.1258786682, 0.0000000000, 0.0155116982, -0.0078727714, 0.9119163656, 0.0000000000, 0.0000000000, 0.0000000000, 0.0000000000, 1.0000000000]}
+        - !<MatrixTransform> {matrix: [1.5073999, -0.2458221, -0.1716117, 0, -0.5181517, 1.3553912, 0.1258787, 0, 0.0155117, -0.0078728, 0.9119164, 0, 0, 0, 0, 1]}
 
   - !<ColorSpace> #Linear S-Gamut3
     name: Linear S-Gamut3
@@ -655,7 +655,7 @@ colorspaces:
     from_scene_reference: !<GroupTransform>
       children:
         - !<ColorSpaceTransform> {src: Linear CIE-XYZ I-E, dst: Linear CIE-XYZ I-D65}
-        - !<MatrixTransform> {matrix: [1.5073998991, -0.2458221374, -0.1716116808, 0.0000000000, -0.5181517271, 1.3553912409, 0.1258786682, 0.0000000000, 0.0155116982, -0.0078727714, 0.9119163656, 0.0000000000, 0.0000000000, 0.0000000000, 0.0000000000, 1.0000000000]}
+        - !<MatrixTransform> {matrix: [1.5073999, -0.2458221, -0.1716117, 0, -0.5181517, 1.3553912, 0.1258787, 0, 0.0155117, -0.0078728, 0.9119164, 0, 0, 0, 0, 1]}
 
   - !<ColorSpace> #Linear S-Gamut3.Cine
     name: Linear S-Gamut3.Cine
@@ -697,7 +697,7 @@ colorspaces:
     from_scene_reference: !<GroupTransform>
       children:
         - !<ColorSpaceTransform> {src: Linear CIE-XYZ I-E, dst: Linear CIE-XYZ I-D65}
-        - !<MatrixTransform> {matrix: [1.7070112863, -0.3930824760, -0.2106008781, 0.0000000000, -0.4275085831, 1.2369444116, 0.1555322984, 0.0000000000, 0.0541778810, 0.0058060091, 0.8656109395, 0.0000000000, 0.0000000000, 0.0000000000, 0.0000000000, 1.0000000000]}
+        - !<MatrixTransform> {matrix: [1.8467790, -0.5259861, -0.2105452, 0, -0.4441533, 1.2594429, 0.1494000, 0, 0.0408554, 0.0156409, 0.8682072, 0, 0, 0, 0, 1]}
 
   - !<ColorSpace> #Linear D-Gamut
     name: Linear D-Gamut
@@ -711,7 +711,7 @@ colorspaces:
     from_scene_reference: !<GroupTransform>
       children:
         - !<ColorSpaceTransform> {src: Linear CIE-XYZ I-E, dst: Linear CIE-XYZ I-D65}
-        - !<MatrixTransform> {matrix: [1.7257000000, -0.4314000000, -0.1917000000, 0.0000000000, -0.6025000000, 1.3906000000, 0.1671000000, 0.0000000000, -0.0156000000, 0.0905000000, 0.8489000000, 0.0000000000, 0.0000000000, 0.0000000000, 0.0000000000, 1.0000000000]}
+        - !<MatrixTransform> {matrix: [1.7257, -0.4314, -0.1917, 0, -0.6025, 1.3906, 0.1671, 0, -0.0156, 0.0905, 0.8489, 0, 0, 0, 0, 1]}
 
   - !<ColorSpace> #Linear F-Gamut
     name: Linear F-Gamut
@@ -725,7 +725,7 @@ colorspaces:
     from_scene_reference: !<GroupTransform>
       children:
         - !<ColorSpaceTransform> {src: Linear CIE-XYZ I-E, dst: Linear CIE-XYZ I-D65}
-        - !<MatrixTransform> {matrix: [1.7166511880, -0.3556707838, -0.2533662814, 0.0000000000, -0.6666843518, 1.6164812366, 0.0157685458, 0.0000000000, 0.0176398574, -0.0427706133, 0.9421031212, 0.0000000000, 0.0000000000, 0.0000000000, 0.0000000000, 1.0000000000]}
+        - !<MatrixTransform> {matrix: [1.7166512, -0.3556708, -0.2533663, 0, -0.6666844, 1.6164812, 0.0157685, 0, 0.0176399, -0.0427706, 0.9421031, 0, 0, 0, 0, 1]}
 
   - !<ColorSpace> #Linear ProTune
     name: Linear ProTune
@@ -739,7 +739,7 @@ colorspaces:
     from_scene_reference: !<GroupTransform>
       children:
         - !<ColorSpaceTransform> {src: Linear CIE-XYZ I-E, dst: Linear CIE-XYZ E}
-        - !<MatrixTransform> {matrix: [2.1917396932, -0.9150474429, -0.2766922504, 0.0000000000, -0.3879516401, 1.2884853623, 0.0994662778, 0.0000000000, -0.2191089835, 0.3574968344, 0.8616121491, 0.0000000000, 0.0000000000, 0.0000000000, 0.0000000000, 1.0000000000]}
+        - !<MatrixTransform> {matrix: [2.2668965, -0.8316336, -0.2965422, 0, -0.3573378, 1.2433731, 0.0883890, 0, -0.2182344, 0.3441751, 0.7926550, 0, 0, 0, 0, 1]}
 
 #LOG Stuff
   - !<ColorSpace> #AgX Log
