@@ -489,7 +489,7 @@ colorspaces:
 
   - !<ColorSpace> #Linear ACES - AP1
     name: Linear ACES - AP1
-    aliases: [Linear ACEScg, lin_ap1, ACES - ACEScg, ACEScg, "ACEScg: Linear - AP1"]
+    aliases: [Linear ACEScg, lin_ap1, ACES - ACEScg, ACEScg, "ACEScg: Linear - AP1", lin_ap1_scene]
     family: Chromaticity
     equalitygroup: ""
     bitdepth: unknown
