@@ -33,4 +33,4 @@ jobs:
       - name: Get CPU info
         run: |
           ociocpuinfo
-          echo test, and deploy your project.
+          ls
