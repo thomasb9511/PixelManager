@@ -37,7 +37,7 @@ jobs:
           
       - name: SHA256sum
         run: |
-         sha256sum PixelManager.ocioz >> PixelManager.ocioz.sha256
+         sha256sum *.ocioz >> PixelManager.ocioz.sha256
         
       - name: Release
         uses: softprops/action-gh-release@v2
@@ -50,5 +50,5 @@ jobs:
           draft: false
           prerelease: true
           files: |
-            PixelManager.ocioz
-            PixelManager.ocioz.sha256
+            *.ocioz
+            *.ocioz.sha256
