@@ -33,4 +33,4 @@ jobs:
       - name: Get CPU info
         run: |
           ociocpuinfo
-          ls
+          ocioarchive PixelManager --iconfig config.ocio 
