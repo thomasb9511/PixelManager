@@ -33,4 +33,21 @@ jobs:
       - name: Get CPU info
         run: |
           ociocpuinfo
-          ocioarchive PixelManager --iconfig config.ocio 
+          ocioarchive PixelManager --iconfig config.ocio
+          
+      - name: SHA256sum
+        run: |
+         sha256sum PixelManager.ocioz >> PixelManager.ocioz.sha256
+        
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          name: PixelManager Rolling Release
+          body: PixelManager Rolling Release
+          draft: false
+          prerelease: true
+          files: |
+            PixelManager.ocioz
+            PixelManager.ocioz.sha256
